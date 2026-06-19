@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page - Ecoturismo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="css externo/style.css">
 </head>
+
 <body>
 
     <header>
@@ -25,44 +31,20 @@
     </header>
 
     <main>
+        
         <section id="inicio" class="hero-section">
             <div class="hero-content">
                 <h1>Explora lo Inexplorado</h1>
-                <p>Descubre las rutas de trekking y de skie en las termas de chillan.</p>
+                <p>Descubre las rutas de trekking más impresionantes de la región con guías certificados.</p>
             </div>
         </section>
 
-        <section id="galeria" class="container mt-5">
-            <h2 class="mb-4 text-center">Nuestra Experiencia</h2>
-            <div id="tourCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/foto1.jpg" class="d-block w-100 rounded shadow" alt="Trekking en la montaña">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/foto2.jpg" class="d-block w-100 rounded shadow" alt="Vista del bosque">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/foto3.jpg" class="d-block w-100 rounded shadow" alt="Campamento base">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#tourCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#tourCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Siguiente</span>
-                </button>
-            </div>
-        </section>
-
-        <section id="tours" class="container mt-5">
-            <div class="card shadow-sm border-0 p-4">
+        <section id="tours" class="container mt-4">
+            <div class="card-custom">
                 <h3 class="mb-4">Itinerarios y Precios</h3>
                 <div class="table-responsive">
                     <table class="table table-bordered text-center align-middle">
-                        <thead class="table-success">
+                        <thead class="table-custom-header">
                             <tr>
                                 <th>Destino</th>
                                 <th>Dificultad</th>
@@ -74,7 +56,7 @@
                             <tr>
                                 <td>Reserva Ñuble</td>
                                 <td>Alta</td>
-                                <td rowspan="2" class="align-middle bg-light">Fines de Semana</td>
+                                <td rowspan="2" class="align-middle">Fines de Semana</td>
                                 <td>$45.000</td>
                             </tr>
                             <tr>
@@ -91,24 +73,58 @@
             </div>
         </section>
 
-        <aside id="reservas" class="container mt-5 mb-5">
-            <div class="recomendaciones-box p-4 rounded shadow">
-                <h4>Recomendaciones y Pasos para reservar tu aventura</h4>
-                <ol class="mt-3">
-                    <li>Revisar la disponibilidad en la tabla de itinerarios.</li>
+        <aside id="reservas" class="container mt-4 mb-4">
+            <div class="recomendaciones-box">
+                <h4>Recomendaciones</h4>
+                <ol>
                     <li>Llevar calzado de montaña.</li>
-                    <li>Preparar hidratación mínima de 2 litros.</li>
-                    <li>Confirmar el uso obligatorio de protector solar.</li>
-                    <li>Contactarnos vía formulario para asegurar el cupo.</li>
+                    <li>Hidratación mínima 2 litros.</li>
+                    <li>Uso obligatorio de protector solar.</li>
+                    <li>Revisar itinerarios antes de reservar.</li>
+                    <li>Contactar al guía 24 hrs antes.</li>
                 </ol>
             </div>
         </aside>
+
+        <section id="galeria" class="container mb-5">
+            <div class="card-custom">
+                <h3 class="mb-4 text-center">Nuestra Experiencia</h3>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner rounded">
+                        <div class="carousel-item active">
+                            <img src="img/foto1.jpg" class="d-block w-100" alt="Trekking 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/foto2.jpg" class="d-block w-100" alt="Trekking 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/foto3.jpg" class="d-block w-100" alt="Trekking 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <footer id="contacto" class="text-center p-4 bg-dark text-white mt-5">
-        <p>&copy; 2026 Agencia de Turismo Aventura. Todos los derechos reservados.</p>
+    <footer id="contacto" class="text-center p-3 bg-dark text-white">
+        <p class="m-0">&copy; 2026 Agencia de Turismo Aventura. Todos los derechos reservados.</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -1,0 +1,141 @@
+/* =========================================
+   1. CONFIGURACIÓN GENERAL Y FUENTES
+   ========================================= */
+body {
+    /* Fuente importada de Google Fonts en el HTML */
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f8f9fa; /* Color de fondo muy suave */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 600;
+}
+
+/* =========================================
+   2. MENÚ DE NAVEGACIÓN (FLEXBOX)
+   ========================================= */
+header {
+    background-color: #2e2e2e; /* Fondo oscuro similar al de la imagen */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-custom ul {
+    /* Uso de Flexbox requerido en la rúbrica */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none; /* Elimina las viñetas */
+    margin: 0;
+    padding: 15px 0;
+}
+
+.navbar-custom li {
+    margin: 0 20px;
+}
+
+.navbar-custom a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+/* Pseudo-clase :hover y text-shadow requeridos */
+.navbar-custom a:hover {
+    color: #28a745; /* Verde Bootstrap */
+    text-shadow: 0 0 10px rgba(40, 167, 69, 0.5);
+}
+
+/* =========================================
+   3. SECCIÓN HERO (IMAGEN DE FONDO)
+   ========================================= */
+.hero-section {
+    /* Implementación de background-image con capas de transparencia (linear-gradient) */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('../img/foto1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.hero-content {
+    background-color: #ffffff;
+    padding: 40px 60px;
+    border-radius: 10px;
+    /* Efecto visual: box-shadow requerido */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+}
+
+.hero-content h1 {
+    color: #2e2e2e;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    color: #555;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+/* =========================================
+   4. TARJETAS Y TABLAS
+   ========================================= */
+.card-custom {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    /* Efecto visual: box-shadow */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+/* Personalización de la tabla Bootstrap */
+.table-custom-header th {
+    background-color: #28a745 !important; /* Verde similar al ejemplo */
+    color: #ffffff !important;
+    border: 1px solid #218838;
+}
+
+.table-bordered td, .table-bordered th {
+    border-color: #dee2e6;
+}
+
+/* =========================================
+   5. ASIDE DE RECOMENDACIONES
+   ========================================= */
+.recomendaciones-box {
+    background-color: #eafaf1; /* Fondo verde muy claro simulando la imagen */
+    padding: 25px 30px;
+    border-radius: 5px;
+    border-left: 5px solid #28a745; /* Borde verde lateral distintivo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.recomendaciones-box h4 {
+    color: #2e2e2e;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.recomendaciones-box ol {
+    margin-bottom: 0;
+    color: #333;
+}
+
+.recomendaciones-box li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
